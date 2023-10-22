@@ -312,6 +312,11 @@
     <ClCompile Include="ThuNghiemDeQuy\TimSoFibonacciThuN.cpp" />
     <ClCompile Include="ThuNghiemDeQuy\TinhTongCacPhanTuMang.cpp" />
     <ClCompile Include="ThuNghiemDeQuy\UCLN.cpp" />
-    <ClCompile Include="CTDL\C2_B1.cpp" />
+    <ClCompile Include="CTDL\Chuong2\C2_B1.cpp" />
+    <ClCompile Include="CTDL\Chuong2\C2_B2.cpp" />
+    <ClCompile Include="CTDL\Chuong2\C2_B3.cpp" />
+    <ClCompile Include="CTDL\Chuong2\C2_B4.cpp" />
+    <ClCompile Include="CTDL\Chuong2\quicksort.cpp" />
+    <ClCompile Include="CTDL\Chuong2\C2_B5.cpp" />
   </ItemGroup>
 </Project>

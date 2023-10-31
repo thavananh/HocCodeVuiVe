@@ -318,5 +318,9 @@
     <ClCompile Include="CTDL\Chuong2\C2_B4.cpp" />
     <ClCompile Include="CTDL\Chuong2\quicksort.cpp" />
     <ClCompile Include="CTDL\Chuong2\C2_B5.cpp" />
+    <ClCompile Include="LTDT\Djisktra.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="LTDT\DOTHI.txt" />
   </ItemGroup>
 </Project>

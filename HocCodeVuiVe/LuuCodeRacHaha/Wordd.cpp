@@ -14,27 +14,23 @@ int main() // Quaaaaaaqua
     char c = s[0];
     s[0] = tolower(c);
     bool flag = false;
-    set<string>string_set;
+    int k = 0;
+    int solan = 0;
     for (size_t i = 0; i < s.size(); i++)
     {
-        if (s[i] != s[i+1])
+        if (s[i] == s[i+1])
         {
-            if (i > 0 && s[i] == s[i-1])
-            {
-                string_set.insert(temp);
-                temp = "";
-                continue;
-            }
-            temp = temp + s[i];
+            k++;
+            flag = true;
         }
-        else if (s[i] == s[i+1])
+        if (s[i] != s[i+1] && k > 1 && flag == true)
         {
-            if (s[i] != s[i-1])
-            {
-                temp = temp + s[i];
-            }
+            solan++;
+        }
+        if (i + 1 > s.size() && solan)
+        {
+
         }
     }
-    cout << string_set.size();
     system("pause");
 }

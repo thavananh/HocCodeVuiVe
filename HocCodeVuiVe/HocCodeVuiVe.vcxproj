@@ -79,7 +79,9 @@
     <ClCompile Include="GoLaiToanBoBangUpCoder\LapTrinhNangCao\QuaTaiToanTu\XUATDIEM.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="LTDT\Djisktra.cpp" />
+    <ClCompile Include="LTDT\Djisktra.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="LTDT\PrePostTime.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
@@ -302,6 +304,7 @@
     <ClCompile Include="LuuCodeRacHaha\DATE.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="LuuCodeRacHaha\DATEARRAY.cpp" />
     <ClCompile Include="LuuCodeRacHaha\DATHUC.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
@@ -974,6 +977,11 @@
   </ItemGroup>
   <ItemGroup>
     <Text Include="LTDT\DOTHI.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="LuuCodeRacHaha\Wordd.exe">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </None>
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>

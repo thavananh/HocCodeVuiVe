@@ -319,8 +319,12 @@
     <ClCompile Include="CTDL\Chuong2\quicksort.cpp" />
     <ClCompile Include="CTDL\Chuong2\C2_B5.cpp" />
     <ClCompile Include="LTDT\Djisktra.cpp" />
+    <ClCompile Include="LuuCodeRacHaha\DATEARRAY.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="LTDT\DOTHI.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="LuuCodeRacHaha\Wordd.exe" />
   </ItemGroup>
 </Project>

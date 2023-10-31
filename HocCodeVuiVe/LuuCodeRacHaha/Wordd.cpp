@@ -10,27 +10,84 @@ int main() // Quaaaaaaqua
 { // temp qu
     string s;
     cin >> s;
-    string temp = "";
+    string a = "";
+    for (size_t i = 0; i < s.length(); i++)
+    {
+        a += tolower(s[i]);
+    }
+    string tmp = "";
     char c = s[0];
     s[0] = tolower(c);
     bool flag = false;
     int k = 0;
     int solan = 0;
-    for (size_t i = 0; i < s.size(); i++)
+    vector<string>v;
+    for (size_t i = 0; i < a.size() - 1; i++)
     {
-        if (s[i] == s[i+1])
+        if (a[i] == a[i + 1])
         {
+            if (k == 0)
+            {
+                tmp += a[i];
+            }
             k++;
-            flag = true;
+           
         }
-        if (s[i] != s[i+1] && k > 1 && flag == true)
+        else if (a[i] != a[i+1] && k > 0)
         {
+            bool b1 = false;
+            if (v.size() == 0)
+            {
+                v.push_back(tmp);
+            }
+            else
+            {
+                for (auto it : v)
+                {
+                    if (it == tmp)
+                    {
+                        b1 = true;
+                        break;
+                    }
+                }
+                if (!b1)
+                {
+                    v.push_back(tmp);
+                }
+            }  
+            tmp = "";
             solan++;
+            k = 0;
+            
         }
-        if (i + 1 > s.size() && solan)
+        else
         {
-
+            tmp += a[i];
+        }
+        if (i + 1 == a.size() - 1)
+        {
+            tmp += a[i];
+            bool b1 = false;
+            if (v.size() == 0)
+            {
+                v.push_back(tmp);
+            }
+            else
+            {
+                for (auto it : v)
+                {
+                    if (it == tmp)
+                    {
+                        b1 = true;
+                        break;
+                    }
+                }
+                if (!b1)
+                {
+                    v.push_back(tmp);
+                }
+            }
         }
     }
-    system("pause");
+    cout << v.size();
 }

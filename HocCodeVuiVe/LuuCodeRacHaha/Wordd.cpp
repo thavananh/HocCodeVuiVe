@@ -10,31 +10,84 @@ int main() // Quaaaaaaqua
 { // temp qu
     string s;
     cin >> s;
-    string temp = "";
+    string a = "";
+    for (size_t i = 0; i < s.length(); i++)
+    {
+        a += tolower(s[i]);
+    }
+    string tmp = "";
     char c = s[0];
     s[0] = tolower(c);
     bool flag = false;
-    set<string>string_set;
-    for (size_t i = 0; i < s.size(); i++)
+    int k = 0;
+    int solan = 0;
+    vector<string>v;
+    for (size_t i = 0; i < a.size() - 1; i++)
     {
-        if (s[i] != s[i+1])
+        if (a[i] == a[i + 1])
         {
-            if (i > 0 && s[i] == s[i-1])
+            if (k == 0)
             {
-                string_set.insert(temp);
-                temp = "";
-                continue;
+                tmp += a[i];
             }
-            temp = temp + s[i];
+            k++;
+           
         }
-        else if (s[i] == s[i+1])
+        else if (a[i] != a[i+1] && k > 0)
         {
-            if (s[i] != s[i-1])
+            bool b1 = false;
+            if (v.size() == 0)
             {
-                temp = temp + s[i];
+                v.push_back(tmp);
+            }
+            else
+            {
+                for (auto it : v)
+                {
+                    if (it == tmp)
+                    {
+                        b1 = true;
+                        break;
+                    }
+                }
+                if (!b1)
+                {
+                    v.push_back(tmp);
+                }
+            }  
+            tmp = "";
+            solan++;
+            k = 0;
+            
+        }
+        else
+        {
+            tmp += a[i];
+        }
+        if (i + 1 == a.size() - 1)
+        {
+            tmp += a[i];
+            bool b1 = false;
+            if (v.size() == 0)
+            {
+                v.push_back(tmp);
+            }
+            else
+            {
+                for (auto it : v)
+                {
+                    if (it == tmp)
+                    {
+                        b1 = true;
+                        break;
+                    }
+                }
+                if (!b1)
+                {
+                    v.push_back(tmp);
+                }
             }
         }
     }
-    cout << string_set.size();
-    system("pause");
+    cout << v.size();
 }

@@ -316,7 +316,16 @@
     <ClCompile Include="CTDL\Chuong2\C2_B2.cpp" />
     <ClCompile Include="CTDL\Chuong2\C2_B3.cpp" />
     <ClCompile Include="CTDL\Chuong2\C2_B4.cpp" />
+    <ClCompile Include="CTDL\Chuong2\quicksort.cpp" />
     <ClCompile Include="CTDL\Chuong2\C2_B5.cpp" />
-    <ClCompile Include="LuuCodeRacHaha\randomChoiChoi.cpp" />
+    <ClCompile Include="LTDT\Djisktra.cpp" />
+    <ClCompile Include="LuuCodeRacHaha\DATEARRAY %28Chua Xong%29.cpp" />
+    <ClCompile Include="LTDT\DEMSO0.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="LTDT\DOTHI.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="LuuCodeRacHaha\Wordd.exe" />
   </ItemGroup>
 </Project>

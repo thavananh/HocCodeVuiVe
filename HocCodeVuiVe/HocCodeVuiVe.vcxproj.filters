@@ -316,7 +316,7 @@
     <ClCompile Include="CTDL\Chuong2\C2_B2.cpp" />
     <ClCompile Include="CTDL\Chuong2\C2_B3.cpp" />
     <ClCompile Include="CTDL\Chuong2\C2_B4.cpp" />
-    <ClCompile Include="CTDL\Chuong2\quicksort.cpp" />
     <ClCompile Include="CTDL\Chuong2\C2_B5.cpp" />
+    <ClCompile Include="LuuCodeRacHaha\randomChoiChoi.cpp" />
   </ItemGroup>
 </Project>

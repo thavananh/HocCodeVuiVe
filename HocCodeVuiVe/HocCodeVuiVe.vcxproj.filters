@@ -319,7 +319,8 @@
     <ClCompile Include="CTDL\Chuong2\quicksort.cpp" />
     <ClCompile Include="CTDL\Chuong2\C2_B5.cpp" />
     <ClCompile Include="LTDT\Djisktra.cpp" />
-    <ClCompile Include="LuuCodeRacHaha\DATEARRAY.cpp" />
+    <ClCompile Include="LuuCodeRacHaha\DATEARRAY %28Chua Xong%29.cpp" />
+    <ClCompile Include="LTDT\DEMSO0.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="LTDT\DOTHI.txt" />
